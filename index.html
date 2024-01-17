@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+	Intermediate Web Programming
+	
+	Filename:			index.html
+	Date:				4.27.17
+	Description:		2D HTML5 Canvas game
+	Supporting Files:	game_functions.js, game_styles.css
+ -->
+
+	<meta charset='UTF-8' />
+	<title>Spacecapades!</title>
+	
+	<link href='game_styles.css' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+	<div class='wrapper'>
+		<div id='menu' class='main'>
+			<div id='main'>
+				<ul>
+					<li><a href='javascript:void(0)' class='button play'>Play</a></li>
+					<li><a href='javascript:void(0)' class='button controls'>Controls</a></li>
+					<li><a href='javascript:void(0)' class='button credits'>Credits</a></li>
+				</ul>
+			</div><!-- /#main -->
+		</div><!-- /#menu -->
+
+		<div id='controller'>
+			<a href='javascript:void(0)' class='button back1'>Back</a>
+		</div><!-- /#controller -->
+		
+		<div id='credits'>
+			<ul>
+				<li>UFO design and art: <a href='https://openclipart.org/detail/20150/ufo-in-cartoon-style'>rg1024 via openclipart.org</a></li>
+				<li>Asteroids design and art: <a href='https://openclipart.org/detail/193398/asteroid-remix-no-shading'>roboxman via openclipart.org</a></li>
+				<li>Sky background design and art: <a href='https://openclipart.org/detail/13778/stars-pattern'>alnilam via openclipart.org</a></li>
+				<li>Crash sound effect: <a href='http://soundbible.com/642-Splat.html'>Mike Koenig via soundbible.com</a></li>
+			</ul>
+			
+			<a href='javascript:void(0)' class='button back2'>Back</a>
+		</div><!-- /#credits -->
+			
+		<canvas id='gameCanvas' width='800' height='480'>
+			<p>Your browser does not support this game.</p>
+			<p>Please update to a newer browser, (e.g. <a href='https://www.mozilla.org/en-US/firefox/new/'>Firefox</a>), to play.</p>
+		</canvas><!-- /canvas -->
+	</div><!-- /.wrapper -->
+
+	<script src='game_functions.js'></script>
+</body>
+</html>

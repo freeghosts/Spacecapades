@@ -1,0 +1,140 @@
+/******** 
+ * Intermediate Web Programming
+ * 
+ * Filename:	game_styles.css
+ * Date:		4.27.17
+ * Description:	CSS for Spacecapades/index.html
+ ********/
+ 
+ 
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: consolas, sans-serif;
+	font-size: 16px;
+	color: #F9FC06;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid black;
+	z-index: 1;
+	width: 800px;
+	height: 480px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 10px 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.wrapper {
+	width: 800px;
+	height: 480px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+#menu {
+	position: absolute;
+	width: 800px;
+	height: 480px;
+	border: 1px solid black;
+	z-index: 2;
+	text-align: center;
+	background-color: #F1F1F1;
+}
+
+#menu.main {
+	background-image: url('images/start_page.png');
+}
+
+#main {
+	display: none;
+	height: 60%;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#controller {
+  	display: none;
+  	background-image: url('images/controls.png');
+	text-align: center;
+	padding-top: 400px;
+	z-index: 2;
+	width: 800px;
+	height: 480px;
+	position: absolute;
+}
+
+#credits {
+	display: none;
+	background-image: url('images/credits.png');
+	text-align: center;
+	padding-top: 30px;
+	line-height: 30px;
+	z-index: 2;
+	width: 800px;
+	height: 480px;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#credits li {
+  padding: 5px 0;
+}
+
+#credits li a:hover {
+	text-decoration: underline;
+}
+
+.button {
+	display: block;
+	width: 150px;
+	margin: 0 auto;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #AE8FB4;
+	color: #F9FC06;
+	font-weight: bold;
+	text-shadow: -1px -1px 0 #AE8FB4, 1px -1px 0 #AE8FB4, -1px 1px 0 #AE8FB4, 1px 1px 0 #AE8FB4;
+	background-color: #D2C0DB; 
+	background-image: -webkit-linear-gradient(bottom, #D2C0DB 0%, #6D4F6B 100%);
+	background-image: linear-gradient(to bottom, #D2C0DB 0%, #6D4F6B 100%);
+	border-radius: 5px;
+}
+
+.button:hover {
+	background-color: #6D4F6B;
+	background-image: -webkit-linear-gradient(bottom, #6D4F6B 0%, #D2C0DB 100%);
+	background-image: linear-gradient(to bottom, #6D4F6B 0%, #D2C0DB 100%);
+}
+
+.back1, .back2, .back1:hover, .back2:hover {
+	margin-top: 10px;
+}
+ 
