@@ -9,7 +9,7 @@ Firefox, Safari
 <p><br></p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/sc_gameplay2.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/sc_gameplay2.png">
-  <img alt="Shows ufo avoiding asteroids." src="images/sc_gameplay2.png">
+  <source media="(prefers-color-scheme: dark)" srcset="images/sc_gameplay.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/sc_gameplay.png">
+  <img alt="Shows ufo avoiding asteroids." src="images/sc_gameplay.png">
 </picture>
