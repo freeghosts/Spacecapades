@@ -14,8 +14,4 @@ Firefox, Safari
 
 <p><br></p>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/sc_gameplay.png" width=50% height=50%>
-  <source media="(prefers-color-scheme: light)" srcset="images/sc_gameplay.png" width=50% height=50%>
-  <img alt="Shows ufo avoiding asteroids." src="images/sc_gameplay.png" width=50% height=50%>
-</picture>
+<img alt="Shows ufo avoiding asteroids." src="images/sc_gameplay.png" width=50% height=50%>
