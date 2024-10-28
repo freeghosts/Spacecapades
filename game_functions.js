@@ -2,7 +2,8 @@
  * Intermediate Web Programming
  * 
  * Filename:	game_functions.js
- * Date:		4.27.17
+ * Date:	4.27.2017
+ * Updated:	10.28.2024
  * Description:	JavaScript for Spacecapades/index.html
  ********/
 
@@ -95,12 +96,13 @@ var gameArea = {
 		this.interval = setInterval(updateGameArea, 20);
 		// add event handlers to key presses to make game interactive
 		// use array to support diagonal movement
+		// updated 28 Oct 2024 to replace deprecated KeyboardEvent.keyCode with KeyboardEvent.key 
 		window.addEventListener('keydown', function(e) {
 			gameArea.keys = (gameArea.keys || []);
-			gameArea.keys[e.keyCode] = true;
+			gameArea.keys[e.key] = true;
 		})
 		window.addEventListener('keyup', function(e) {
-			gameArea.keys[e.keyCode] = false;
+			gameArea.keys[e.key] = false;
 		})
 	},
 	
@@ -292,17 +294,18 @@ function updateGameArea() {
 	hero.speedY = 0;
 	
 	// move player object in appropriate direction based on which key(s) is pressed
-	if (gameArea.keys && gameArea.keys[37]) {hero.speedX -= 3;}	// move left
-    if (gameArea.keys && gameArea.keys[39]) {hero.speedX = 3;}	// move right
-    if (gameArea.keys && gameArea.keys[38]) {hero.speedY -= 3;}	// move up
-    if (gameArea.keys && gameArea.keys[40]) {hero.speedY = 3;}	// move down
+	// updated 28 Oct 2024 to replace deprecated KeyboardEvent.keyCode with KeyboardEvent.key 
+	if (gameArea.keys && gameArea.keys['ArrowLeft']) {hero.speedX -= 3;}	// move left
+    	if (gameArea.keys && gameArea.keys['ArrowRight']) {hero.speedX = 3;}	// move right
+    	if (gameArea.keys && gameArea.keys['ArrowUp']) {hero.speedY -= 3;}	// move up
+    	if (gameArea.keys && gameArea.keys['ArrowDown']) {hero.speedY = 3;}	// move down
     
-    // add score text to canvas and update score using frameNo
+    	// add score text to canvas and update score using frameNo
 	score.text = 'SCORE: ' + gameArea.frameNo;
 	score.update();
     
-    // update player object's position and redraw it
-    hero.newPos();
+    	// update player object's position and redraw it
+    	hero.newPos();
 	hero.update();
 }
 
