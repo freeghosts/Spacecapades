@@ -4,10 +4,10 @@ Spacecapades! is an infinite scroller game made using HTML Canvas, CSS, and Java
 
 ### Works On
 
-Firefox, Safari, Internet Explorer 
+Firefox, Safari, DuckDuckGo, Internet Explorer 
 
 >[!NOTE]
->Does not work on Chromium-based browsers, (e.g. Chrome, Edge, Opera)
+>Does not work on Chromium-based browsers, (e.g. Brave, Chrome, Edge, Opera)
 
 ## Play on [Codepen](https://codepen.io/freeghosts)
 
